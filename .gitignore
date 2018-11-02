@@ -19,3 +19,7 @@ yarn-error.log*
 *.njsproj
 *.sln
 *.sw*
+
+# Autogen files
+src/**/*.js
+src/**/*.js.map

@@ -1,10 +1,11 @@
-import Vue from 'vue';
-import App from './App.vue';
-import router from './router';
+import Vue from "vue";
+import Host from "./Host.vue";
+import router from "./router";
 
 Vue.config.productionTip = false;
 
+// noinspection JSUnusedGlobalSymbols
 new Vue({
   router,
-  render: (h) => h(App),
-}).$mount('#app');
+  render: (h) => h(Host),
+}).$mount("#host");
