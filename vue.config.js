@@ -9,7 +9,9 @@ module.exports = {
   parallel: undefined,
   css: undefined,
   devServer: {
-    progress: false
+    progress: false,
+    port: 17000,
+    host: '0.0.0.0'
   },
   chainWebpack: config => {
     // noinspection JSUnresolvedFunction, JSUnusedLocalSymbols

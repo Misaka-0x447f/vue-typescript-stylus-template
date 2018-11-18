@@ -1,6 +1,6 @@
 <template lang="pug">
   div.home
-    span misaka is here to help.
+    span {{e("intro")}}
 </template>
 <style lang="stylus">
   .home
@@ -9,12 +9,16 @@
     justify-content center
 </style>
 <script lang="ts">
-// @ is an alias to /src
-import Vue from "vue";
+  // @/ is an alias to /src/
+  import Vue from "vue";
+  import say from "@/utils/i18n";
 
-export default Vue.extend({
-  name: "home",
-  components: {
-  },
-});
+  export default Vue.extend({
+    name: "home",
+    data: () => {
+      return {
+        e: say
+      };
+    }
+  });
 </script>
