@@ -2,7 +2,6 @@
   router-view
 </template>
 <style lang="stylus">
-  @import "color-profiles"
   body
     width 100vw
     height 100vh
@@ -16,4 +15,11 @@
     -moz-osx-font-smoothing grayscale
     text-align center
     color plain-text-0
+
+  a
+    color link-text-0
+    text-decoration none
+
+  a:hover
+    color link-text-hover-0 
 </style>

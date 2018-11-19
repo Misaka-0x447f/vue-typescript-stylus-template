@@ -1,3 +1,5 @@
+const path = require('path');
+
 // noinspection JSUnusedGlobalSymbols
 module.exports = {
   lintOnSave: false,
@@ -25,6 +27,20 @@ module.exports = {
           emitErrors: true
         }
       })
-      .end()
+      .end();
+    const types = ['vue-modules', 'vue', 'normal-modules', 'normal'];
+    // noinspection JSUnresolvedFunction
+    types.forEach(type => addStyleResource(config.module.rule('stylus').oneOf(type)))
   }
 };
+
+function addStyleResource(rule) {
+  // noinspection JSUnresolvedFunction
+  rule.use('style-resource')
+    .loader('style-resources-loader')
+    .options({
+      patterns: [
+        path.resolve(__dirname, './src/style-include.styl'),
+      ],
+    })
+}

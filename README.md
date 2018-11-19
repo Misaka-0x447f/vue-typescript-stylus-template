@@ -29,7 +29,10 @@ Consider get your tools from libs like lodash first.
 Some IDEs may be able to compile typescript files automatically. Do not do that while we auto done this.
 
 ### Do not create 'components' folder
-You can create public components in pages folder.
+You can create public components folder in pages folder:
+```
+./src/pages/_/MyPublicComponent.vue
+```
 
 ### Do not make node_modules more black hole
 You should not use very simple js lib like 'is-odd' or 'is-numeric'. Make a function in utils folder.
