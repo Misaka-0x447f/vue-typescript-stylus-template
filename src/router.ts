@@ -10,6 +10,10 @@ export default new Router({
   routes: [
     {
       path: "/",
+      redirect: "/home"
+    },
+    {
+      path: "/home",
       name: "home",
       // lazy load
       component: () => import("./pages/Home/index.vue"),

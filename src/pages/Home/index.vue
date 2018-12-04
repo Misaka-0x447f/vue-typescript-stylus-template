@@ -1,11 +1,12 @@
 <template lang="pug">
-  div.home
-    div.big {{e("intro")}}
-    div {{e("start")}}
-    field(link="http://misaka.org")
+  div.root
+    div.container
+      div.big {{e("intro")}}
+      div {{e("start")}}
+      field(link="http://misaka.org")
 </template>
 <style lang="stylus" scoped>
-  .home
+  .container
     display flex
     flex-direction column
     align-items center
