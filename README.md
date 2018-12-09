@@ -29,6 +29,10 @@ To create public components, just do that in the folder ```@/pages/_/```.
 ### Use libs before create util packages.
 Consider get tools from libs like lodash first.
 
+### Use slots feature
+If you are migrated from react.js, factory component is not for component stack here.
+Do not google for HoC of Vue. Use slot feature here.
+
 ## Do not's
 ### Do not compile anything by your IDE
 Different developer uses different IDEs.  
