@@ -38,14 +38,8 @@ Do not google for HoC of Vue. Use slot feature here.
 Different developer uses different IDEs.  
 Some of them has no a feature which auto-compile some files.  
 Some of them has but needs config files, which
-is not included in Version Control System.  
-So, please do not do that while we use npm scripts to do.
-
-### Do not create 'components' folder
-You can create public components folder in pages folder:
-```
-./src/pages/_/MyPublicComponent.vue
-```
+may not included in Version Control System.  
+Please do not do that while we use npm scripts to do.
 
 ### Do not use root element of component in scoped styles
 root element of components are always global and cannot be scoped.

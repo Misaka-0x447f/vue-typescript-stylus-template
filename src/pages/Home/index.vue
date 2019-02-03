@@ -18,7 +18,7 @@
 <script lang="ts">
   // @/ is an alias to /src/
   import Vue from "vue";
-  import Author from "@/pages/_/Author.vue";
+  import Author from "@/components/Author.vue";
   import say from "@/utils/i18n";
 
   export default Vue.extend({

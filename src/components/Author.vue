@@ -8,7 +8,7 @@
 </style>
 <script lang="ts">
 import Vue from "vue";
-import say from "@/utils/i18n";
+import say from "../utils/i18n";
 
 export default Vue.extend({
   name: "Misaka",
