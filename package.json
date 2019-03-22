@@ -9,21 +9,21 @@
     "inspect-webpack-config": "vue-cli-service inspect > webpack-config-readable.txt"
   },
   "dependencies": {
-    "vue": "^2.5.17",
-    "vue-router": "^3.0.1"
+    "vue": "^2.6.10",
+    "vue-router": "^3.0.2"
   },
   "devDependencies": {
-    "@vue/cli-plugin-typescript": "^3.0.5",
-    "@vue/cli-service": "^3.0.5",
+    "@vue/cli-plugin-typescript": "^3.5.1",
+    "@vue/cli-service": "^3.5.1",
     "style-resources-loader": "^1.2.1",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.2",
-    "tslint": "^5.11.0",
+    "tslint": "^5.14.0",
     "tslint-loader": "^3.5.4",
-    "typescript": "^3.0.0",
+    "typescript": "^3.3.4000",
     "vue-cli-plugin-pug": "^1.0.7",
-    "vue-template-compiler": "^2.5.17",
-    "webpack-cli": "^3.1.2"
+    "vue-template-compiler": "^2.6.10",
+    "webpack-cli": "^3.3.0"
   },
   "postcss": {
     "plugins": {
