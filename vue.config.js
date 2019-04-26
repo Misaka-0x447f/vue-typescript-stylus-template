@@ -3,7 +3,7 @@ const path = require('path');
 // noinspection JSUnusedGlobalSymbols
 module.exports = {
   lintOnSave: false,
-  baseUrl: undefined,
+  publicPath: undefined,
   outputDir: undefined,
   assetsDir: undefined,
   runtimeCompiler: true,
