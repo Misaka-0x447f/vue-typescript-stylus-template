@@ -1,11 +1,11 @@
-const dictCollections = {
-  en: {
-    intro: "Misaka is here to help.",
-    start: "Getting started with a copy of @/pages/Home/EmptyComponentTemplate.vue",
-    link: "vue-typescript-pug-stylus template by"
-  }
+const primaryDict = {
+  intro: "Misaka is here to help.",
+  start: "Getting started with a copy of @/pages/Home/EmptyComponentTemplate.vue",
+  link: "vue-typescript-pug-stylus template by"
 };
 
-export const dict = dictCollections.en;
+const alterDict: {
+  [T: string]: typeof primaryDict
+} = {};
 
-export default dict;
+export {primaryDict as e};
