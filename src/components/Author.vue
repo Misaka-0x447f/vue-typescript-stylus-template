@@ -7,21 +7,18 @@
 <style lang="stylus" scoped>
 </style>
 <script lang="ts">
-import Vue from "vue";
-import say from "../utils/i18n";
+  import Vue from "vue";
 
-export default Vue.extend({
-  name: "Misaka",
-  props: {
-    link: {
-      type: String,
-      default: "(no link)"
+  export default Vue.extend({
+    name: "Misaka",
+    props: {
+      link: {
+        type: String,
+        default: "(no link)"
+      }
+    },
+    data: () => {
+      return {};
     }
-  },
-  data: () => {
-    return {
-      e: say
-    };
-  }
-});
+  });
 </script>

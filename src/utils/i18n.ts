@@ -1,4 +1,4 @@
-const dict = {
+const dictCollections = {
   en: {
     intro: "Misaka is here to help.",
     start: "Getting started with a copy of @/pages/Home/EmptyComponentTemplate.vue",
@@ -6,6 +6,6 @@ const dict = {
   }
 };
 
-export default function say(word: keyof typeof dict.en): string {
-  return dict.en[word];
-}
+export const dict = dictCollections.en;
+
+export default dict;

@@ -1,8 +1,8 @@
 <template lang="pug">
   div.root
     div.container
-      div.big {{e("intro")}}
-      div {{e("start")}}
+      div.big {{e.intro}}
+      div {{e.start}}
       field(link="http://misaka.org")
 </template>
 <style lang="stylus" scoped>
@@ -19,7 +19,7 @@
   // @/ is an alias to /src/
   import Vue from "vue";
   import Author from "@/components/Author.vue";
-  import say from "@/utils/i18n";
+  import e from "@/utils/i18n";
 
   export default Vue.extend({
     name: "home",
@@ -28,7 +28,7 @@
     },
     data: () => {
       return {
-        e: say
+        e
       };
     }
   });
